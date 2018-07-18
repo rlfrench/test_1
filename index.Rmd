@@ -1,0 +1,29 @@
+---
+title: "sample.Rmd"
+author: "Rowan French"
+date: '2018-07-18'
+output: html_document
+---
+
+### Experimenting with R studio markdown
+
+I am going to do a simple R chunk 
+
+```{r}
+x<- 2+2
+x
+```
+
+Without R input
+```{r echo=FALSE}
+x<- 2+2
+x
+```
+
+```{r warning=FALSE,message=FALSE}
+library(dplyr)
+```
+
+```{r}
+plot(cars$speed,cars$dist)
+```
